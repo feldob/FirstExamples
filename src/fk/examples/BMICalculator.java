@@ -37,8 +37,8 @@ public class BMICalculator {
 	}
 
 	private static void bmiStatusToString(Person person) {
-		double bmi = calculateBMI(person.weight, person.height);
+		double bmi = calculateBMI(person.getWeight(), person.getHeight());
 		String category = getBMICategoryFor(bmi);
-		System.out.println(person.name + " is " + category + ".");
+		System.out.println(person.getName() + " is " + category + ".");
 	}
 }
